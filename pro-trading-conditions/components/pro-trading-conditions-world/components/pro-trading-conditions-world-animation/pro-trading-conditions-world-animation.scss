@@ -1,0 +1,17 @@
+.pro-trading-conditions-world-animation {
+  --pro-trading-conditions-world-opacity: .5;
+
+  position: absolute;
+  top: -100px;
+
+  opacity: var(--pro-trading-conditions-world-opacity);
+
+  width: 1070px;
+  height: 602px;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}

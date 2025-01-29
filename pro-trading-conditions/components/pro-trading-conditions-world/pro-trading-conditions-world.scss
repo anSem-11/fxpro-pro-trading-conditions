@@ -1,0 +1,85 @@
+@import '~styles/mixins/index';
+
+.pro-trading-conditions-world {
+  --pro-trading-conditions-world-z-index: 1;
+
+  position: relative;
+  z-index: var(--pro-trading-conditions-world-z-index);
+
+  padding: var(--spacing-10xl) 0 var(--spacing-5xl);
+
+  background-color: var(--background-alternative);
+
+  @include tablet {
+    padding: var(--spacing-10xl) 0 var(--spacing-10xl);
+  }
+
+  .container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: var(--spacing-7xl) var(--spacing-s);
+
+    width: 100%;
+
+    max-width: 770px;
+
+    @include tablet {
+      padding: var(--spacing-9xl) 0;
+    }
+  }
+
+  &__flags-wrapper {
+    position: relative;
+    z-index: 1;
+
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 370px;
+    height: 100%;
+
+    text-align: left;
+  }
+
+  &__title {
+    margin: 0 auto var(--spacing-2xl);
+
+    color: var(--background-primary);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-130);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0 auto var(--spacing-2xl);
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: var(--spacing-2xl);
+
+      @include rtl {
+        margin-right: 0;
+        margin-left: var(--spacing-2xl);
+      }
+    }
+  }
+
+  &__flag {
+    width: 30px;
+    height: 30px;
+  }
+}

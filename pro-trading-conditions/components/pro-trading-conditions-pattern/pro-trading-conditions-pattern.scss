@@ -1,0 +1,24 @@
+@import '~styles/mixins/index';
+
+.pro-trading-conditions-pattern {
+  --pro-trading-conditions-pattern-z-index: 1;
+  --pro-trading-conditions-pattern-opacity: 0.75;
+
+  position: absolute;
+  z-index: var(--pro-trading-conditions-pattern-z-index);
+  left: 50%;
+
+  opacity: var(--pro-trading-conditions-pattern-opacity);
+
+  width: 100%;
+
+  max-width: 193px;
+  height: auto;
+
+  transform: translateX(-50%);
+
+  @include mobile {
+    width: 65%;
+    max-width: 386px;
+  }
+}

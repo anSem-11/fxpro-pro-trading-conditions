@@ -1,0 +1,122 @@
+@import '~styles/mixins/index';
+
+.pro-trading-conditions-video-animation {
+  margin: 0 auto;
+
+  max-width: 100%;
+
+  transform: translateY(0);
+  transition: transform 1.5s ease;
+
+  &_animating {
+    transform: translateY(-200px);
+  }
+
+  @include tablet {
+    position: absolute;
+  }
+
+  &_1 {
+
+    @include tablet {
+      height: 597px;
+    }
+  }
+
+  &_2,
+  &_4 {
+
+    @include tablet {
+      height: 770px;
+    }
+  }
+
+  &_3 {
+
+    @include tablet {
+      height: 710px;
+    }
+  }
+
+  &_5 {
+
+    @include tablet {
+      height: 650px;
+    }
+  }
+
+  &_6 {
+
+    @include tablet {
+      height: 717px;
+    }
+  }
+
+  &__video-wrapper {
+    position: relative;
+
+    margin: auto;
+
+    transform: translateY(200px);
+
+    &_1 {
+      max-width: 656px;
+      aspect-ratio: 300 / 252;
+
+      @include tablet {
+        height: 388px;
+        aspect-ratio: unset;
+      }
+    }
+
+    &_2 {
+      max-width: 770px;
+      aspect-ratio: 299 / 256;
+
+      @include tablet {
+        height: 499px;
+        aspect-ratio: unset;
+      }
+    }
+
+    &_3 {
+      max-width: 729px;
+      aspect-ratio: 293 / 286;
+
+      @include tablet {
+        height: 416px;
+        aspect-ratio: unset;
+      }
+    }
+
+    &_4 {
+      max-width: 770px;
+      aspect-ratio: 300 / 300;
+
+      @include tablet {
+        height: 434px;
+        aspect-ratio: unset;
+      }
+    }
+
+    &_5 {
+      max-width: 631px;
+      aspect-ratio: 300 / 309;
+
+      @include tablet {
+        height: 416px;
+        aspect-ratio: unset;
+      }
+    }
+
+    &_6 {
+      max-width: 673px;
+      aspect-ratio: 307 / 327;
+
+      @include tablet {
+        height: 416px;
+        aspect-ratio: unset;
+      }
+    }
+  }
+}

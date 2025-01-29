@@ -1,0 +1,48 @@
+@import '~styles/mixins/index';
+
+.pro-trading-conditions-join {
+  position: relative;
+
+  padding: var(--spacing-10xl) 0;
+
+  background-color: var(--background-alternative);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr var(--spacing-l) 1fr;
+    gap: 0;
+
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 770px;
+
+    @include tablet {
+      grid-template-columns: 1fr var(--spacing-2xl) 1fr;
+    }
+  }
+
+  &__description {
+    color: var(--color-text-grey);
+    font-size: var(--font-size-semi-l);
+    font-weight: var(--font-weight-500);
+    text-align: left;
+
+    @include tablet {
+      font-size: var(--font-size-semi-xl);
+    }
+
+    &:first-child {
+      grid-column: 1 / 2;
+    }
+
+    &:last-child {
+      grid-column: 3 / 4;
+    }
+  }
+
+  #lottie-animation-pro-trading-conditions-join {
+    top: -60%;
+    left: 80%;
+  }
+}

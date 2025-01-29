@@ -1,0 +1,121 @@
+@import '~styles/mixins/index';
+
+.pro-trading-conditions-benefits {
+  & > * {
+    height: 620px;
+
+    @include tablet {
+      height: 700px;
+    }
+  }
+
+  &__description {
+    position: relative;
+
+    padding: var(--spacing-9xl) 0 var(--spacing-5xl);
+
+    @include tablet {
+      padding: var(--spacing-10xl) 0 0;
+    }
+  }
+
+  &__description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    margin: 0 auto;
+
+    padding: 0 var(--spacing-s);
+
+
+    width: 100%;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+
+      padding: 0;
+
+      max-width: 770px;
+    }
+  }
+
+  .description-dark {
+    background-color: var(--background-alternative);
+
+    color: var(--background-primary);
+  }
+
+  .description-light {
+    background-color: var(--background-primary);
+
+    color: var(--background-alternative);
+
+    .pro-trading-conditions-benefits__content {
+      color: var(--color-text-grey);
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-size: var( --font-size-3xl);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-130);
+    text-align: left;
+  }
+
+  &__content {
+    margin: 0 0 var(--spacing-5xl);
+
+    font-size: var( --font-size-semi-xl);
+    font-weight: var(--font-weight-500);
+    text-align: left;
+
+    @include desktop {
+      margin: 0 0 var(--spacing-10xl);
+    }
+  }
+
+  &__title,
+  &__content {
+    width: 100%;
+
+    @include tablet {
+      width: 100%;
+      max-width: 370px;
+    }
+  }
+
+  #lottie-animation-pro-trading-conditions-benefits-1 {
+    top: 25%;
+    left: 15%;
+  }
+
+  #lottie-animation-pro-trading-conditions-benefits-2 {
+    top: 5%;
+    left: 80%;
+  }
+
+  #lottie-animation-pro-trading-conditions-benefits-3 {
+    top: -10%;
+    left: 40%;
+  }
+
+  #lottie-animation-pro-trading-conditions-benefits-4 {
+    top: -5%;
+    left: 70%;
+  }
+
+  #lottie-animation-pro-trading-conditions-benefits-5 {
+    top: 0;
+  }
+
+  #lottie-animation-pro-trading-conditions-benefits-6 {
+    top: 0;
+    left: 20%;
+  }
+}

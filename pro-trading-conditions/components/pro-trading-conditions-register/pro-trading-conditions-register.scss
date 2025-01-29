@@ -1,0 +1,45 @@
+@import '~styles/mixins/index';
+
+.pro-trading-conditions-register {
+  padding: var(--spacing-10xl) 0 var(--spacing-5xl);
+
+  background-color: var(--background-alternative);
+
+  color: var(--background-primary);
+
+  text-align: center;
+
+  @include tablet {
+    padding: var(--spacing-15xl) 0;
+  }
+
+  &__title {
+    margin: 0 auto var(--spacing-2xl);
+
+    max-width: 570px;
+
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-130);
+  }
+
+  &__description {
+    margin: 0 auto var(--spacing-5xl);
+
+    max-width: 570px;
+
+    font-size: var(--font-size-semi-xl);
+    font-weight: var(--font-weight-500);
+    line-height: var(--line-height-130);
+  }
+
+  &__button {
+    display: block;
+
+    margin: 0 auto;
+  }
+
+  #lottie-animation-pro-trading-conditions-register {
+    left: 20%;
+  }
+}

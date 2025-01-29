@@ -1,0 +1,109 @@
+@import '~styles/mixins/index';
+
+.pro-trading-conditions-hero-animation {
+  width: 100%;
+  height: auto;
+
+  path:first-of-type {
+    opacity: 0;
+
+    animation: 1.5s 1.2s linear forwards fade-in;
+  }
+
+  path {
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  #pro-trading-conditions-hero-p-1 {
+    animation-name: hero-p-1, fade-out;
+    animation-duration: 0.3s, 1.5s;
+    animation-delay: 0s, 2.5s;
+    stroke-dasharray: 0 100;
+
+    @include strokeDasharrayKeyframes(100, hero-p-1);
+  }
+
+  #pro-trading-conditions-hero-p-2 {
+    animation-name: hero-p-2, fade-out;
+    animation-duration: 0.7s, 1.5s;
+    animation-delay: 0.3s, 2.5s;
+    stroke-dasharray: 0 200;
+
+    @include strokeDasharrayKeyframes(200, hero-p-2);
+  }
+
+  #pro-trading-conditions-hero-p-3 {
+    animation-name: hero-p-3, fade-out;
+    animation-duration: 0.5s, 1.5s;
+    animation-delay: 1s, 2.5s;
+    stroke-dasharray: 0 250;
+
+    @include strokeDasharrayKeyframes(250, hero-p-3);
+  }
+
+  #pro-trading-conditions-hero-p-4 {
+    animation-name: hero-p-4, fade-out;
+    animation-duration: 1s, 1.5s;
+    animation-delay: 1.5s, 2.5s;
+    stroke-dasharray: 0 500;
+
+    @include strokeDasharrayKeyframes(500, hero-p-4);
+  }
+
+  #pro-trading-conditions-hero-r-1 {
+    animation-name: hero-r-1, fade-out;
+    animation-duration: 0.8s, 1.5s;
+    animation-delay: 0s, 2.5s;
+    stroke-dasharray: 0 300;
+
+    @include strokeDasharrayKeyframes(300, hero-r-1);
+  }
+
+  #pro-trading-conditions-hero-r-2 {
+    animation-name: hero-r-2, fade-out;
+    animation-duration: 1.7s, 1.5s;
+    animation-delay: 0.8s, 2.5s;
+    stroke-dasharray: 0 1000;
+
+    @include strokeDasharrayKeyframes(1000, hero-r-2);
+  }
+
+  #pro-trading-conditions-hero-o-1 {
+    animation-name: hero-o-1, fade-out;
+    animation-duration: 0.8s, 1.5s;
+    animation-delay: 0s, 2.5s;
+    stroke-dasharray: 0 500;
+
+    @include strokeDasharrayKeyframes(500, hero-o-1);
+  }
+
+  #pro-trading-conditions-hero-o-2 {
+    animation-name: hero-o-2, fade-out;
+    animation-duration: 1.9s, 1.5s;
+    animation-delay: 0.8s, 2.5s;
+    stroke-dasharray: 0 1000;
+
+    @include strokeDasharrayKeyframes(1000, hero-o-2);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

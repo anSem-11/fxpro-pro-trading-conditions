@@ -1,0 +1,120 @@
+@import '~styles/mixins/index';
+
+.pro-trading-conditions-feedback {
+  --lottie-animation-pro-trading-conditions-feedback-z-index: 1;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background-color: var(--background-alternative);
+
+  &__title {
+    margin-bottom: var(--spacing-6xl);
+
+    color: var(--color-text-grey);
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-300);
+    text-align: left;
+    letter-spacing: -0.06em;
+
+    @include tablet {
+      position: relative;
+      z-index: 10;
+
+      margin-top: var(--spacing-s);
+      margin-bottom: 0;
+
+      font-size: var(--font-size-6xl);
+    }
+  }
+
+  &__columns {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__column {
+    position: relative;
+
+    width: calc(33.33% - var(--spacing-2xl));
+
+    &:first-child {
+      transform: translate3d(0, 106px, 0);
+    }
+
+    &:nth-child(2) {
+      transform: translate3d(0, 0, 0);
+    }
+
+    &:last-child {
+      transform: translate3d(0, 168px, 0);
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    height: 100%;
+
+    @include tablet {
+      overflow: hidden;
+
+      height: 520px;
+    }
+
+    swiper-container {
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    swiper-slide {
+      display: flex;
+      justify-content: center;
+
+      width: auto;
+      height: auto;
+      flex-shrink: 0;
+    }
+  }
+
+  &__gradient-top,
+  &__gradient-bottom {
+    position: absolute;
+
+    display: none;
+
+    @include tablet {
+      z-index: 3;
+      left: 0;
+
+      display: block;
+
+      width: 100%;
+      height: var(--spacing-10xl);
+    }
+  }
+
+  &__gradient-top {
+    top: 0;
+
+    background: linear-gradient(360deg, rgb(0 0 0 / 0%) 20%, #000 80%);
+  }
+
+  &__gradient-bottom {
+    bottom: 0;
+
+    background: linear-gradient(360deg, #000 0%, rgb(0 0 0 / 0%) 100%);
+  }
+
+  #lottie-animation-pro-trading-conditions-feedback {
+    z-index: var(--lottie-animation-pro-trading-conditions-feedback-z-index);
+    left: 80%;
+  }
+}

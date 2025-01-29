@@ -1,0 +1,21 @@
+@import '~styles/mixins/index';
+
+:root {
+  /** Text color */
+  --color-grey: #AAA;
+  --color-title-grey: #DDD;
+  --color-text-grey: #86868B;
+  --background-feedback-cards: #1A1A1A;
+  --color-footer-need-help: #000;
+
+  /** Background color */
+  --background-footer-need-help: #fff;
+
+  /** Font size */
+  --font-size-semi-l: 18px;
+  --font-size-6xl: 60px;
+
+  /** Spacing vars */
+  --spacing-15xl: 150px;
+  --spacing-30xl: 300px;
+}

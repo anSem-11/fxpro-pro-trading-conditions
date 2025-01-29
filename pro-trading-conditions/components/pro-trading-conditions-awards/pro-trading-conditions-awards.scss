@@ -1,0 +1,64 @@
+@import '~styles/mixins/index';
+
+.pro-trading-conditions-awards {
+  --pro-trading-conditions-awards-z-index: 1;
+
+  position: relative;
+  z-index: var(--pro-trading-conditions-awards-z-index);
+
+  background-color: var(--background-alternative);
+
+  &__list {
+    display: grid;
+
+    justify-items: center;
+
+    margin: 0 auto;
+    padding: 0;
+
+    width: 100%;
+    max-width: 1170px;
+
+    list-style-type: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-semi-s);
+
+    @include tablet {
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--spacing-l);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+  }
+
+  &__marker {
+    display: block;
+
+    width: var(--spacing-m);
+    height: var(--spacing-6xl);
+
+    @include tablet {
+      height: var(--spacing-10xl);
+    }
+  }
+
+  &__title {
+    max-width: 104px;
+
+    color: var(--background-primary);
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-400);
+    text-align: left;
+
+    @include tablet {
+      max-width: 197px;
+
+      font-size: var(--font-size-semi-xl);
+      font-weight: var(--font-weight-500);
+    }
+  }
+}

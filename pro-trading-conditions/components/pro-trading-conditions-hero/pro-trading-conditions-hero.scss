@@ -1,0 +1,53 @@
+@import '~styles/mixins/index';
+
+.pro-trading-conditions-hero {
+  padding: var(--spacing-6xl) 0 var(--spacing-10xl);
+
+  background-color: var(--background-alternative);
+
+  text-align: center;
+
+  @include desktop {
+    padding: 120px 0 var(--spacing-10xl);
+  }
+
+  &__description {
+    color: var(--color-grey);
+    letter-spacing: -0.01em;
+  }
+
+  &__title {
+    color: var(--color-title-grey);
+  }
+
+  &__button {
+    display: block;
+
+    margin: 0 auto var(--spacing-5xl);
+
+    @include tablet {
+      margin: 0 auto var(--spacing-7xl);
+    }
+  }
+
+  &__animation-wrapper {
+    position: relative;
+
+    margin: auto;
+
+    max-width: 606px;
+  }
+
+  &__pattern {
+    position: unset;
+    z-index: 1;
+
+    .pro-trading-conditions-pattern {
+      top: 17.8%;
+      left: 60.3%;
+
+      width: 65%;
+      max-width: 386px;
+    }
+  }
+}
